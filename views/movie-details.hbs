@@ -1,14 +1,20 @@
-<h1>peliculas detalladas</h1>
-<img src="{{ movieDetails.image }}" alt="">
-<a href="/movies">Go back</a>
-<h3>{{ movieDetails.title }}</h3>
-<h4>Director: {{movieDetails.director}}</h4>
-<h5>Stars</h5>
-{{#each movieDetails.stars}}
-<li>{{ this }}</li>
-{{/each}}
-<p>{{movieDetails.description}}</p>
-{{!-- {{#each movieDetails.showtimes}}
-<p> {{this}} | {{this}} </p>
-{{/each}} --}}
-<p>{{movieDetails.showtimes}} | </p>
+
+<h1 class="javi-cinemas">Javi Cinemas</h1>
+<div class="cinemas">
+        <img id="cartel-peli" src="{{ movieDetails.image }}" alt="">
+        <div id="details">
+            <a class="btn-movies" href="/movies">Go back</a>
+            <h3>{{ movieDetails.title }}</h3>
+            <h4>Director: {{movieDetails.director}}</h4>
+            <h5>Stars</h5>
+            {{#each movieDetails.stars}}
+            <li>{{ this }}</li>
+            {{/each}}
+            <p>{{movieDetails.description}}</p>
+            {{!-- {{#each movieDetails.showtimes}}
+            <p> {{this}} | {{this}} </p>
+            {{/each}} --}}
+            <p>{{movieDetails.showtimes}} | </p>
+        </div>
+
+</div>
