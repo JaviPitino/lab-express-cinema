@@ -1,7 +1,16 @@
-<h1>pelis</h1>
+<div id="javi-cinemas">
+    <h1>Javi Cinemas<span>  > Pincha en las peliculas para ver la descripción y los horarios</span></h1>
+</div>
 
+
+
+<div id="container">
 {{#each movieList}}
-    <img src="{{this.image}}" alt="Película">
-    <li>{{this.title}}</li>
-    <a href="/movies/{{this._id}}">See More</a>
+    <div id="cartel">
+        <img src="{{this.image}}" alt="Película">
+        <li>{{this.title}}</li>
+        <li><a href="/movies/{{this._id}}">See More</a></li>
+    </div>
+    
 {{/each}}
+</div>
